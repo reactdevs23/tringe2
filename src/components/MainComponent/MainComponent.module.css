@@ -1,0 +1,210 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.subHeading {
+  color: var(--color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+.heading {
+  color: var(--color);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  font-family: var(--fontFamily);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  margin-bottom: 50px;
+}
+.ticketsWrapper {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  justify-items: start;
+  gap: 25px;
+  width: 100%;
+}
+
+.titleContainer {
+  border: var(--border);
+  border-radius: 20px;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--bg);
+}
+.title {
+  color: var(--color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1.28px;
+}
+.ticketsContainer {
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 22px 25px 20px 26px;
+}
+
+.box {
+  border-radius: 10px;
+  border: var(--border);
+  background: var(--bg);
+  min-width: 115px;
+  min-height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.ticket {
+  color: var(--color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+}
+.boxWrapper {
+  display: flex;
+
+  justify-content: center;
+  gap: 70px;
+}
+
+/* .affectUserExperienceBoxWrapper {
+  align-items: center;
+  width: 100%;
+} */
+
+.countingWrapper {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.longLine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -35px;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1;
+  width: var(--lineWidth);
+  height: calc(var(--height) + 70px);
+  background: var(--lineColor);
+}
+
+.yesBox,
+.noBox,
+.assignMentBox,
+.priorityBox {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+  border-radius: 20px;
+  background: var(--bg);
+  padding: 18px;
+  min-height: 100%;
+  min-width: 151px;
+}
+.assignMentBox {
+  position: relative;
+}
+.assignMentBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -35px;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1;
+  width: var(--lineWidth);
+  height: calc(var(--height) + 70px);
+  background: var(--lineColor);
+}
+.noBox {
+  position: relative;
+}
+.shortLine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -35px;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1;
+  width: var(--lineWidth);
+  height: calc(var(--height) + 35px);
+  background: var(--lineColor);
+}
+.assignMentBox {
+  margin-left: 80px;
+}
+.priorityBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+.priorityBox {
+  min-width: 151px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yesBox .label,
+.noBox .label,
+.assignMentBox .label {
+  color: var(--color);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.priorityBoxWrapper .label {
+  color: var(--color);
+  text-align: center;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 1.8px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 25px);
+}
+.tickets {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
